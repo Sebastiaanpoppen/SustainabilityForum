@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :ideas
+  resources :profiles, only: [:new, :edit, :create, :update]
 
 
   root to: "ideas#index"
