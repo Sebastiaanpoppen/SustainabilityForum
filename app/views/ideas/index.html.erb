@@ -1,1 +1,13 @@
-hi
+<ul class="flex-container">
+  <% @ideas.each do |idea| %>
+  <li class="flex-item">
+    <% idea.photos.each do |photo| %>
+      <h1 class="flextitle"><%= link_to idea.name, idea_path(idea.id) %></h1>
+      <br>
+      <p class="flexprice"> <%= "price #{idea.price} "%><p>
+      <p> <%= image_tag photo.image %> </p>
+
+    <% end %>
+    <% end %>
+  </li>
+</ul>
