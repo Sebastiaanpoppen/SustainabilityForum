@@ -2,11 +2,13 @@
   <% @ideas.each do |idea| %>
   <li class="flex-item">
     <% idea.photos.each do |photo| %>
-      <h1 class="flextitle"><%= link_to idea.name, idea_path(idea.id) %></h1>
-      <br>
-      <p class="flexprice"> <%= "price #{idea.price} "%><p>
-      <p> <%= image_tag photo.image %> </p>
+    <p class="flexphoto"> <%= link_to idea_path(idea.id) do %> <%= image_tag photo.image %> </p>
+    <div class="flexinfo">
+      <h1 class="flextitle"><%= link_to idea.name, idea_path(idea.id)%></h1>
+      <p class="flexprice"> € <%= link_to idea.price, idea_path(idea.id) %><p>
+    </div>
 
+    <% end %>
     <% end %>
     <% end %>
   </li>

@@ -2,12 +2,12 @@ Photo.delete_all
 Idea.delete_all
 
 
-photo1 = Photo.create(image: "https://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481555298/solar_panels_under_blue_sky_and_sun_flare_twcdph.jpg")
-photo2 = Photo.create(image: "https://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481555298/PEISys1_kthm4u.jpg")
+photo1 = Photo.create(image: "https://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481812526/solar_panels_under_blue_sky_and_sun_flare_twcdph.jpg")
+photo2 = Photo.create(image: "http://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481812551/PEISys1_kthm4u.jpg")
 photo3 = Photo.create(image: "https://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481555298/8718291762461-IMS-nl_NL_yptlwd.jpg")
-photo4 = Photo.create(image: "http://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481555298/radflek-radiator-reflector-panel_zptkag.jpg")
-photo5 = Photo.create(image: "http://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481555298/bediening-511-300_yemr1s.jpg")
-photo6 = Photo.create(image: "http://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481555298/tanksworks4kround5_iyseoa.jpg")
+photo4 = Photo.create(image: "http://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481812597/radflek-radiator-reflector-panel_zptkag.jpg")
+photo5 = Photo.create(image: "https://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481812968/764407_pb_01_xjigvu.jpg")
+photo6 = Photo.create(image: "http://res.cloudinary.com/sebastiaanpoppen/image/upload/v1481808950/tanksworks4kround5_iyseoa.jpg")
 
 
 idea1 = Idea.create(name:"Solar panels", price: "1299", photos: [photo1])
