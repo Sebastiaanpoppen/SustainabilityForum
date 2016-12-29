@@ -16,3 +16,4 @@ idea3 = Idea.create(name:"Philips 100W Led light", price: "5.99", photos: [photo
 idea4 = Idea.create(name:"Radiator insulation", price: "8.99", photos: [photo4])
 idea5 = Idea.create(name:"Electricity savings", price: "39.99", photos: [photo5])
 idea6 = Idea.create(name:"Rainwater tank", price: "299", photos: [photo6])
+idea5 = Idea.create(name:"test", price: "299", photos: [photo6])

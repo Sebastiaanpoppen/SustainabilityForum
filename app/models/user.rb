@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
 
   has_one :profile
+  has_many :ideas
 
     def has_profile?
       profile.present?

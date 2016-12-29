@@ -7,8 +7,6 @@ Rails.application.routes.draw do
   resources :ideas
   resources :profiles, only: [:new, :edit, :create, :update]
 
-
   root to: "ideas#index"
-
 
 end

@@ -1,8 +1,11 @@
 class Idea < ApplicationRecord
 
+  validates :name, presence: true
+  validates :price, presence: true
+
   belongs_to :user
   has_many :photos
   has_many :videos
-  has_one :profile
-  
+
+
 end
